@@ -1,5 +1,5 @@
-
-/* THUMBNAILS CLASS 
+/* -------------------------- */
+/* THUMBNAILS CLASS FROM SECTION 2
  * -------------------------- */
 
 .first-container {
@@ -13,6 +13,7 @@
 
 .thumbnail {
 	background-color: #1c2027;
+	border-color: #1c2027;
 	height: 390px;
 	width: 320px;
 }
