@@ -34,6 +34,7 @@ ul {
 
 .header img {
     border-radius: 80px;
+    border: 7px solid #d8dbdb;
     height: 120px;
     margin-top: 35px;
     margin-bottom: 20px;
