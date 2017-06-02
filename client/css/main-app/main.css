@@ -124,7 +124,6 @@ button::after {
  * RIGHT MENU
  ---------------------------*/
 
-
 #menu .right-menu {
     display: flex;
     justify-content: flex-end;
@@ -135,12 +134,12 @@ button::after {
     margin-right: 10px;
 }
 
-.right-menu button {
+.right-menu a {
     border-bottom: 5px solid #EAFFA2;
 }
 
 .right-menu {
-    display: inline-block;
+   display: inline-block;
 }
 
 
@@ -153,12 +152,18 @@ button::after {
     font-size: 70px;
 }
 
+
 /*---------------------------
  * MODAL
  ---------------------------*/
+.modal-header,
+.modal-body,
+.modal-footer {
+    background: #50a3a2;
+}
 
-.modal-content, .modal-body, .modal-footer {
-    background-color: black;
+.modal-header {
+    border-bottom: 0;
 }
 
 /*---------------------------
@@ -234,8 +239,19 @@ form button:hover {
     background-color: #f5f7f9;
 }
 
-.regis p{
+.regis p {
     color: #1c2027;
-    padding-top: 3px; 
+    padding-top: 3px;
     font-size: 16px;
+}
+
+
+
+
+/*---------------------------
+ * 9 RANDOM ALUMNI
+ ---------------------------*/
+
+.header h1 a {
+    text-decoration:
 }

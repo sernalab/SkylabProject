@@ -7,57 +7,46 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>FINAL PROJECT</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main-app/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/main-app/examples.css" />
     <link rel="stylesheet" type="text/css" href="css/main-app/main.css" />
     <link rel="stylesheet" type="text/css" href="css/main-app/thumbnails.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-app/bootstrap.css" />
 </head>
 
 <body>
     <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">See All Projects</a></li>
-        <li data-menuanchor="secondPage" class="students-menu"><a href="#secondPage">Students</a></li>
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Projects</a></li>
+        <li data-menuanchor="secondPage" class="students-menu"><a href="#secondPage">Applicants</a></li>
         <li data-menuanchor="3rdPage" class="companies-menu"><a href="#3rdPage">Companies</a></li>
     </ul>
     <ul id="menu">
         <li class="right-menu">
-            <button data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Alumni login</button>
+            <a data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Alumni login</a>
         </li>
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="login">
-                            <div class="container-login">
-                                <form class="form">
-                                    <li>
-                                        <input type="text" placeholder="Username">
-                                        <input type="password" placeholder="Password">
-                                    </li>
-                                    <li>
-                                        <button type="submit" id="login-button">Login</button>
-                                    </li>
-                                    <div class="regis">
-                                        <p>Not a member? <span>Sign up</span></p>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </ul>
+    <!-- Login -->
+    <!-- Modal -->
+    <div class="modal" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign in</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-login">
+                        <form class="form">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" id="login-button">Login</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </ul>
-    <!-- Login -->
+    </div>
     <!-- End login -->
     <!-- Start website -->
     <div id="fullpage">
@@ -79,8 +68,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 1</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 1</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -97,8 +87,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 2</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 2</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -115,8 +106,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 3</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 3</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -142,8 +134,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 4</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 4</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -160,8 +153,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 5</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 5</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -178,8 +172,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 6</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 6</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -202,8 +197,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 7</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 7</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -220,8 +216,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 8</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 8</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -238,8 +235,9 @@
                         <li class="span">
                             <div class="thumbnail">
                                 <div class="header">
-                                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
-                                    <h1 class="students-header">Students 9</h1>
+                                    <a href="profile.html"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                    </a>
+                                    <h1 class="students-header"><a href="profile.html">Students 9</a></h1>
                                     <div class="tech">
                                         <ul class="item bg-item">
                                             <li class="tech-items">Bootstrap</li>
@@ -277,8 +275,6 @@
             menu: '#menu',
         });
     });
-
-    $( "div" ).removeClass( "modal-backdrop fade in")
     </script>
 </body>
 

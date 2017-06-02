@@ -41,10 +41,16 @@ ul {
     width: 120px;
 }
 
+.header a {
+    color: #444444;
+    text-decoration: none;
+}
+
 .students-header {
     color: #444444;
     font-size: 30px;
 }
+
 
 .tech {
     margin-top: 20px;
