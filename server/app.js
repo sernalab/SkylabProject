@@ -1,26 +1,25 @@
 const express = require('express')
 const app = express()
-// const bodyParser = require('body-parser')
-// const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 const path = require('path')
+
+const routesUsers = require('./routes/users')
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-const dbUrl = process.env.DB_URL
-const PORT = process.env.PORT
-
+/* static folder */
 app.use(express.static(path.join(__dirname, '../dist')))
 
-// app.use(bodyParser.urlencoded({ extended: false }))
-// app.use(bodyParser.json())
+/* bodyParser */
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-// /* DEBUG req.body */
-// app.use((req, res, next) => {
-//   require('debug')('body-parser')(req.body)
-//   next()
-// })
+/* DEBUG req.body */
+app.use((req, res, next) => {
+  require('debug')('body-parser')(req.body)
+  next()
+})
 
-app.listen(PORT)
-console.log(`Listening on PORT ${PORT}`)
+module.exports = app

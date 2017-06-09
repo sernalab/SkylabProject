@@ -1,25 +1,34 @@
 const mongoose = require('mongoose');
-const collection = 'projects'
+const collection = 'users'
 
-const ProjectSchema = new mongoose.Schema({
-    name: "John Doe",
-    password: "J0hnD03!x4",
-    promotion: ["2016-04", "2016-07", "2016-9",  "2017-01", "2017-04", "2017-07"],
-    made: ["Javascript", "VueJS"],
-    email: "john.doe@gmail.com",
-    working: true
-    name: {
-	    type: String,
-		required: true
+const UserSchema = new mongoose.Schema({
+    name_user: {
+        type: String,
     },
     password: {
-		type: String,
-		required: true	
+        type: String,
     },
     promotion: {
-    	type: Number,
-		required: true
+        type: String,
+    },
+    email: {
+        type: String,
+    },
+    github_user: {
+        type: String,
+    },
+    description_work: {
+        type: String,
+    }
+    project_name: {
+        type: String,  
+    },
+    project_made: {
+        type: String,
+    },
+    description_project: {
+        type: String,
     }
 }, { collection })
 
-module.exports = mongoose.model('Project', ProjectSchema);
+module.exports = mongoose.model('User', UserSchema);
