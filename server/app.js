@@ -1,11 +1,26 @@
 const express = require('express')
-const path = require('path')
 const app = express()
+// const bodyParser = require('body-parser')
+// const mongoose = require('mongoose')
+const path = require('path')
 
-require('dotenv').load()
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
 
+const dbUrl = process.env.DB_URL
 const PORT = process.env.PORT
 
-app.use(express.static(path.join(__dirname, '../client')))
+app.use(express.static(path.join(__dirname, '../dist')))
 
-app.listen(PORT, () => console.log(`B-) SkylabProjects running on PORT ${PORT}`))
+// app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(bodyParser.json())
+
+// /* DEBUG req.body */
+// app.use((req, res, next) => {
+//   require('debug')('body-parser')(req.body)
+//   next()
+// })
+
+app.listen(PORT)
+console.log(`Listening on PORT ${PORT}`)

@@ -1,0 +1,48 @@
+.box-masonry {
+    background-color: #f4f4f4;
+}
+.box-masonry img{
+    margin-left: 25%;
+}
+
+.header-profile img {
+    border-radius: 80px;
+    border: 7px solid #d8dbdb;
+    height: 120px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 120px;
+}
+
+.working,
+.location,
+.repo,
+.description,
+.linkedin i {
+    color: #c5c7c9;
+}
+
+.location i {
+    padding-right: 6px;
+}
+
+.linkedin-link {
+	display: inline-block;
+}
+
+.description, .linkedin p {
+    display: inline-block;
+}
+
+.box-masonry-text h4 {
+    border-bottom: 1px solid #d8dbdb;
+}
+
+.box-masonry-text h4 a:hover {
+    text-decoration: none;
+}
+
+.box-masonry-text p {
+    display: inline-block;
+    padding-left: 10px;
+}
