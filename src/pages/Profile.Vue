@@ -95,6 +95,7 @@
 
 <script>
 import asideMenu from '../components/Aside_Menu'
+import api from '../service/api'
 
 export default {
   name: 'profile',
@@ -104,6 +105,12 @@ export default {
   },
   components: {
     asideMenu
+  },
+  mounted() {
+    api.getUser(this.$route.params.id)
+        .then(response => {
+          this.users = response.data
+        })
   }
 }
 </script>

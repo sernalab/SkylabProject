@@ -6,10 +6,15 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
   	projects: [{
-      id: 1,
       project_name: "Skylab Projects",
       description: "Library of projects from Skylab",
-      img: "http://i.imgur.com/busAqYz.png",
+      user: {
+        name: "Carles",
+        promotion: "2017-04",
+        email: "carles.serna@gmail.com",
+        github: "@sernalab",
+        description : ""
+      }
     }],
   },
   getters: {

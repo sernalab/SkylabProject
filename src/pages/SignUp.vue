@@ -20,6 +20,7 @@
 import VueFormGenerator from "vue-form-generator";
 import Vue from "Vue";
 import { mapMutations } from 'vuex'
+import api from '../service/api'
 
 Vue.use(VueFormGenerator);
 
@@ -29,27 +30,20 @@ export default{
 		},
 		data() {
 			return {
-					model: {             
-						id: 1,
+					model: {
 						name: "John Doe",
 						password: "J0hnD03!x4",
 						promotion: ["2016-04", "2016-07", "2016-9",  "2017-01", "2017-04", "2017-07"],
 						made: ["Javascript", "VueJS"],
 						email: "john.doe@gmail.com",
+						github: "@sernlab",
+						description_work: "start up",
 						project_name: "Skylab Projects",
-						description: "Library of projects from Skylab",
-						img: "http://i.imgur.com/busAqYz.png",
+						description_project: "Library of projects from Skylab",
 						working: true
 					},
 					schema: {
 						fields: [{
-							type: "input",
-							inputType: "text",
-							label: "ID (disabled text field)",
-							model: "id",
-							readonly: true,         
-							disabled: true
-						},{
 							type: "input",
 							inputType: "text",
 							label: "Name",
@@ -82,27 +76,33 @@ export default{
 							label: "E-mail",
 							model: "email",
 							placeholder: "User's e-mail address"
+						},{
+							type: "input",
+							inputType: "text",
+							label: "Github",
+							model: "github",
+							placeholder: "Insert your github user"
 						},
 						{
 							type: "input",
 							inputType: "text",
-							label: "Project Name",
+							label: "Description Work",
+							model: "description_work",
+							placeholder: "Insert a description"
+						},
+						{
+							type: "input",
+							inputType: "text",
+							label: "Project name",
 							model: "project_name",
-							placeholder: "Insert Name"
+							placeholder: "Name project"
 						},
 						{
 							type: "input",
 							inputType: "text",
-							label: "Description",
-							model: "description",
-							placeholder: "Describe your project"
-						},
-						{
-							type: "input",
-							inputType: "text",
-							label: "Home Cover",
-							model: "img",
-							placeholder: "Insert HOME img from URL"
+							label: "Description Project",
+							model: "description_project",
+							placeholder: "Insert a description"
 						},
 						{
 							type: "checkbox",
@@ -122,6 +122,7 @@ export default{
 				'addProject'
 			]), 
 			submit() {
+				api.addUser(this.model)
 				this.addProject(this.model)
 				this.$router.push('/projects')
 			}

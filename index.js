@@ -1,6 +1,7 @@
 require('dotenv').load()
 
 global.__base = __dirname + '/server/'
+console.log(__dirname + '/server/')
 
 const app = require('./server/app')
 const db = require('./server/config/db')

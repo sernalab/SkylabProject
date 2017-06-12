@@ -1,13 +1,10 @@
 const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
 const path = require('path')
+const bodyParser = require('body-parser')
+
+const app = express()
 
 const routesUsers = require('./routes/users')
-
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
-}
 
 /* static folder */
 app.use(express.static(path.join(__dirname, '../dist')))
@@ -21,5 +18,7 @@ app.use((req, res, next) => {
   require('debug')('body-parser')(req.body)
   next()
 })
+
+app.use('/api/users', routesUsers)
 
 module.exports = app

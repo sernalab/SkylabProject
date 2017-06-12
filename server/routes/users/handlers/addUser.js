@@ -1,11 +1,32 @@
-const User = require( __base + 'models/Users')
+const User = require('../../../models/Users')
 
-function addUser( req, res ) {
-	const { name_user, password, promotion, email, github_user, description_work, project_name, project_made, description_project } = req.body
-	const user	= new User( { name_user, password, promotion, email, github_user, description_work, project_name, project_made, description_project } )
-	user.save()
-		.then( () => res.status(200).json({ msg: 'user inserted properly'}) )
-		.catch( () => res.status(500).json({ msg: 'error inserting user'}) )
+function addUser(req, res) {
+    const {
+        name,
+        password,
+        promotion,
+        made,
+        email,
+        github,
+        description_work,
+        project_name,
+        description_project,
+        working
+    } = req.body
+    const user = new User({ 
+    	project_name,
+      	description: description_project,
+      	user: {
+	        name,
+	        promotion,
+	        email,
+	        github,
+	        description: description_work 
+	    	}
+	    })
+    	user.save()
+	        .then(() => res.status(200).json({ msg: 'user inserted properly' }))
+	        .catch(() => res.status(500).json({ msg: 'error inserting user' }))
 }
 
 module.exports = addUser
