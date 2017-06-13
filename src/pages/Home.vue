@@ -10,6 +10,7 @@
     </ul>
 
     <!-- Login -->
+    
     <!-- Modal -->
     <div class="modal" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -33,6 +34,7 @@
         </div>
     </div>
     <!-- End login -->
+
     <!-- Start website -->
     <div id="fullpage">
         <!-- First section -->
@@ -244,7 +246,7 @@
         </div> -->
         <!-- End second section  -->
         <!-- Last section -->
-     <!--    <div class="section" id="section2">
+        <!-- <div class="section" id="section2">
             <div class="intro">
                 <h1>Companies</h1>
                 <p></p>

@@ -1,16 +1,16 @@
 <template>
 <div class="container">
 	<div>
-		<p>SKYLAB PROJECTS</p>
+		<h1><span>SKYLAB</span>PROJECTS</h1>
 	</div>
-	<form action="" @submit.prevent="submit" class="col-md-6">
+	<form action="" @submit.prevent="submit" class="col-md-12">
 		<div class="panel-body">
 			<vue-form-generator 
 				:schema="schema" 
 				:model="model" 
 				:options="formOptions">
 			</vue-form-generator>
-			<button type="submit">Send</button>
+			<button type="submit">Thanks!</button>
 		</div>
 	</form>
 </div>
@@ -34,7 +34,7 @@ export default{
 						name: "John Doe",
 						password: "J0hnD03!x4",
 						promotion: ["2016-04", "2016-07", "2016-9",  "2017-01", "2017-04", "2017-07"],
-						made: ["Javascript", "VueJS"],
+						made: ["AngularJS", "MongoDB"],
 						email: "john.doe@gmail.com",
 						github: "@sernlab",
 						description_work: "start up",
@@ -66,11 +66,24 @@ export default{
 							model: "promotion",      
 							values: ["2016-04", "2016-07", "2016-09", "----" , "2017-01", "2017-04", "2017-07"],
 						},{
-							type: "select",
-							label: "Project made with",
-							model: "made",      
-							values: ["Javascript", "VueJS", "CSS3", "HTML5"]
-						},{
+							type: "checklist",
+						    label: "Project made with",
+						    model: "made",
+						    listBox: true,
+						    values: [
+						        "HTML5",
+						        "SASS",
+						        "ES6",
+						        "Javascript",
+						        "CSS3",
+						        "NodeJS",
+						        "MongoDB",
+						        "AngularJS",
+						        "ReactJS",
+						        "VueJS"
+						    ]
+						},
+					    {
 							type: "input",
 							inputType: "email",
 							label: "E-mail",
@@ -108,7 +121,7 @@ export default{
 							type: "checkbox",
 							label: "Working",
 							model: "working",
-							default: true
+							default: true 
 						}]
 					},
 					formOptions: {

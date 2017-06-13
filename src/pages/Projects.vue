@@ -25,6 +25,7 @@
 import asideMenu from '../components/Aside_Menu'
 import allProjects from '../components/Project_thumb'
 import { mapState } from 'Vuex'
+import api from '../service/api'
 
 export default {
   name: 'projects',
@@ -40,6 +41,12 @@ export default {
   components: {
     asideMenu,
     allProjects
+  },
+  mounted() {
+    api.getUser(this.$route.params.id)
+        .then(response => {
+          this.users = response.data
+        })
   }
 }
 </script>

@@ -35,11 +35,16 @@ pre .key {
 }
 
 h1 {
+    color: #555555;
     text-align: center;
     font-size: 36px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
+}
+
+span{
+    color: #f06485;
 }
 
 fieldset {
@@ -68,8 +73,36 @@ fieldset {
 
 .panel-body {
     padding: 15px;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 40px; 
 }
 
 .field-checklist .wrapper {
     width: 100%;
 }
+
+.hint{
+    border-bottom: 1px solid #555555;
+    padding-bottom: 15px;
+}
+
+/*
+*--------------------
+*INPUTS
+*--------------------
+*/
+
+#promotion {
+    width: 25%;
+}
+
+#project-made-with{
+    width: 25%;   
+}
+
+.listbox{
+    display: inline-block;
+}
+
+

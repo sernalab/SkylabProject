@@ -13,7 +13,7 @@
                                     <div class="box-masonry header-profile">
                                         <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
                                         <div class="box-masonry-text">
-                                            <h4><a href="detail.html">Jaume Regas</a></h4>
+                                            <h4><a href="#">Insert Name</a></h4>
                                             <div class="working">
                                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                 <p>Google Inc.</p>
@@ -96,21 +96,22 @@
 <script>
 import asideMenu from '../components/Aside_Menu'
 import api from '../service/api'
+import { mapState } from 'Vuex'
 
 export default {
-  name: 'profile',
-  data () {
-    return {
+    name: 'profile',
+    data () {
+        return {
+        }
+    },
+    components: {
+        asideMenu
+    },
+    mounted() {
+        api.getUsers()
+            .then(response => {
+              this.users = response.data
+            })
     }
-  },
-  components: {
-    asideMenu
-  },
-  mounted() {
-    api.getUser(this.$route.params.id)
-        .then(response => {
-          this.users = response.data
-        })
-  }
 }
 </script>

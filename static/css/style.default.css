@@ -401,6 +401,8 @@ SIDEBAR + RIGHT COLUMN
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-align: left;
+    color: #555555;
 }
 
 .sidebar-heading a {
