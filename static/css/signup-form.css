@@ -82,9 +82,12 @@ fieldset {
     width: 100%;
 }
 
-.hint{
-    border-bottom: 1px solid #555555;
-    padding-bottom: 15px;
+.listbox{
+    display: inline-block;
+}
+
+.list-row{
+    display: inline-block;
 }
 
 /*
@@ -93,16 +96,10 @@ fieldset {
 *--------------------
 */
 
-#promotion {
-    width: 25%;
+#promotion{
+    width: 30%;
 }
 
-#project-made-with{
-    width: 25%;   
+.field-checklist>.form-control {
+    background-color: blue;
 }
-
-.listbox{
-    display: inline-block;
-}
-
-
