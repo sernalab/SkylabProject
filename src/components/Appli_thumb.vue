@@ -5,7 +5,7 @@
         <div class="thumbnail">
           <div class="header">
               <a :href="`#/profile/${user._id}`"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt=""></a>
-              <h1 class="students-header"><a href="`#/profile/${user._id}`">Students 1</a></h1>
+              <h1 class="students-header"><a href="`#/profile/${user._id}`">{{ user.user.name }}</a></h1>
               <div class="tech">
                   <ul class="item bg-item">
                       <li class="tech-items">Bootstrap</li>

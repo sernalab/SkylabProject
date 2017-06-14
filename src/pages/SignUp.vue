@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 	<div>
-		<p>SKYLAB PROJECTS</p>
+		<h1><span>SKYLAB</span>PROJECTS</h1>
 	</div>
 	<form action="" @submit.prevent="submit" class="col-md-6">
 		<div class="panel-body">
@@ -36,7 +36,7 @@ export default{
 						promotion: ["2016-04", "2016-07", "2016-9",  "2017-01", "2017-04", "2017-07"],
 						made: ["Javascript", "VueJS"],
 						email: "john.doe@gmail.com",
-						github: "@sernlab",
+						github: "@sernalab",
 						description_work: "start up",
 						project_name: "Skylab Projects",
 						description_project: "Library of projects from Skylab",
@@ -65,11 +65,6 @@ export default{
 							label: "Promotion",
 							model: "promotion",      
 							values: ["2016-04", "2016-07", "2016-09", "----" , "2017-01", "2017-04", "2017-07"],
-						},{
-							type: "select",
-							label: "Project made with",
-							model: "made",      
-							values: ["Javascript", "VueJS", "CSS3", "HTML5"]
 						},{
 							type: "input",
 							inputType: "email",
@@ -124,7 +119,7 @@ export default{
 			submit() {
 				api.addUser(this.model)
 				this.addProject(this.model)
-				this.$router.push('/projects')
+				this.$router.push('/applicants')
 			}
 		}  
 };

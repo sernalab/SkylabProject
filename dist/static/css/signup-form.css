@@ -40,6 +40,11 @@ h1 {
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
+    color: #555555;
+}
+
+span{
+    color: #f06485;
 }
 
 fieldset {
@@ -66,6 +71,10 @@ fieldset {
     border-top-right-radius: 3px;
 }
 
+form {
+    left: 25%;
+}
+
 .panel-body {
     padding: 15px;
 }
@@ -73,3 +82,8 @@ fieldset {
 .field-checklist .wrapper {
     width: 100%;
 }
+
+#promotion{
+    width: 30%;
+}
+
