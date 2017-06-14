@@ -36,7 +36,7 @@ export default{
 						promotion: ["2016-04", "2016-07", "2016-9",  "2017-01", "2017-04", "2017-07"],
 						made: ["AngularJS", "MongoDB"],
 						email: "john.doe@gmail.com",
-						github: "@sernlab",
+						github: "@sernalab",
 						description_work: "start up",
 						project_name: "Skylab Projects",
 						description_project: "Library of projects from Skylab",
@@ -66,6 +66,7 @@ export default{
 							model: "promotion",      
 							values: ["2016-04", "2016-07", "2016-09", "----" , "2017-01", "2017-04", "2017-07"],
 						},{
+<<<<<<< HEAD
 							type: "checklist",
 						    label: "Project made with",
 						    model: "made",
@@ -84,6 +85,8 @@ export default{
 						    ]
 						},
 					    {
+=======
+>>>>>>> skylab-project
 							type: "input",
 							inputType: "email",
 							label: "E-mail",
@@ -137,7 +140,7 @@ export default{
 			submit() {
 				api.addUser(this.model)
 				this.addProject(this.model)
-				this.$router.push('/projects')
+				this.$router.push('/applicants')
 			}
 		}  
 };
