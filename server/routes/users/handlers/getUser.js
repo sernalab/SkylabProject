@@ -5,7 +5,7 @@ function getUser (req,res) {
 
 	User.findById( id)
 		.then( (user) => res.status(200).json({user}) )
-		.catch( () => res.status(500).json({ msg: `error getting userw/ id ${id} `}) )
+		.catch( () => res.status(500).json({ msg: `error getting user/ id ${id} `}) )
 }
 
 module.exports = getUser

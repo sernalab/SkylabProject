@@ -11,9 +11,9 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
                                     <div class="box-masonry header-profile">
-                                        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAs3AAAAJDEyZGIzODE3LWEwNWQtNDgyYS1hYmQ1LTM5MjM5NGUwNzY2Mw.jpg" alt="">
+                                        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAr8AAAAJGJlYzQyM2E1LTIzOTgtNDE1My1hNjE2LTBiNTIyYjVmODUzZQ.jpg" alt="">
                                         <div class="box-masonry-text">
-                                            <h4><a href="#">Insert Name</a></h4>
+                                            <h4><a href="#">x</a></h4>
                                             <div class="working">
                                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                 <p>Google Inc.</p>
@@ -112,6 +112,9 @@ export default {
             .then(response => {
               this.users = response.data
             })
-    }
+    },
+    props: [
+    'user'
+    ]
 }
 </script>
