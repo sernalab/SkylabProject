@@ -1,4 +1,4 @@
-# demo-vue-starter
+# Skylab Projects
 
 > A Vue.js project
 
@@ -19,3 +19,7 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+------
+
+![alt tag](https://media.giphy.com/media/xUA7aS2fsY1cZnAiHu/giphy.gif)

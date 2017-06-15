@@ -14,7 +14,6 @@ export default {
 
 <!-- projects -->
 <style src="../static/css/bootstrap.css"></style>
-<style src="../static/css/font-awesome.css"></style>  
 <style src="../static/css/style.default.css" lang="css"></style>
 
 <!-- profile -->
