@@ -6,6 +6,7 @@ const UserSchema = new mongoose.Schema({
         github_repo: String,
         heroku_url: String,
         description: String,
+        img: String,
         promotion: {
             type: String
         },

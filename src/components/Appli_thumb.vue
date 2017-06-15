@@ -4,7 +4,7 @@
       <li class="span">
         <div class="thumbnail">
           <div class="header">
-              <a :href="`#/profile/${user._id}`"><img :src="user.img" alt=""></a>
+              <a :href="`#/profile/${user._id}`"><img :src="user.img"></a>
               <h1 class="students-header"><a :href="`#/profile/${user._id}`">{{ user.user.name }}</a></h1>
               
               <div class="space"></div>
