@@ -22,4 +22,9 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ------
 
+This repository contains a Full Stack project made with HTML/CSS/Vue.js/Node/Mongo/Express at Skylab Coders Academy Bootcamp.
+
+Skylab Projects! is an easy way to expose finals projects from our studients.
+
+
 ![alt tag](https://media.giphy.com/media/xUA7aS2fsY1cZnAiHu/giphy.gif)
