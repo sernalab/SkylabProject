@@ -10,7 +10,7 @@
 				:model="model" 
 				:options="formOptions">
 			</vue-form-generator>
-			<button type="submit" class="see-all">Send</button>
+			<button type="submit" class="b-pink">Send</button>
 		</div>
 	</form>
 </div>
@@ -31,15 +31,10 @@ export default{
 		data() {
 			return {
 					model: {
-						name: "John Doe",
-						password: "J0hnD03!x4",
-						promotion: ["2016-04", "2016-07", "2016-9",  "2017-01", "2017-04", "2017-07"],
-						email: "john.doe@gmail.com",
-						github: "@sernalab",
-						description_work: "start up",
-						project_name: "Skylab Projects",
-						description_project: "Library of projects from Skylab",
-						working: true
+						name: "",
+						project_name: "",
+						github: "",
+						heroku: "",
 					},
 					schema: {
 						fields: [{
@@ -53,20 +48,6 @@ export default{
 						},{
 							type: "input",
 							inputType: "text",
-							label: "Github",
-							model: "github",
-							placeholder: "Insert your github user"
-						},
-						{
-							type: "input",
-							inputType: "text",
-							label: "Description Work",
-							model: "description_work",
-							placeholder: "Insert a description"
-						},
-						{
-							type: "input",
-							inputType: "text",
 							label: "Project name",
 							model: "project_name",
 							placeholder: "Name project"
@@ -74,9 +55,15 @@ export default{
 						{
 							type: "input",
 							inputType: "text",
-							label: "Description Project",
-							model: "description_project",
-							placeholder: "Insert a description"
+							label: "Github",
+							model: "github",
+							placeholder: "Insert your github repository"
+						},{
+							type: "input",
+							inputType: "text",
+							label: "Heroku",
+							model: "heroku",
+							placeholder: "Insert your url link project"
 						}]
 					},
 					formOptions: {

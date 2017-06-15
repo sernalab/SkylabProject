@@ -5,9 +5,7 @@ const UserSchema = new mongoose.Schema({
         project_name: String ,
         github_repo: String,
         heroku_url: String,
-        description: {
-            type: String
-        },
+        description: String,
         promotion: {
             type: String
         },

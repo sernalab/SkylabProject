@@ -8,15 +8,6 @@ ul {
     padding: 0;
 }
 
-.thumbnails-box {
-    text-align: center;
-}
-
-.item {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .scroll {
     overflow-y: scroll;
     margin-left: 25%;
@@ -26,7 +17,7 @@ ul {
 .thumbnail {
     background-color: #f4f4f4;
     border: 2px solid #1c2027;
-    /*height: 410px;*/
+    height: 350px;
     margin-right: 20px;
     padding: 0;
     width: 240px;
@@ -35,6 +26,7 @@ ul {
 .thumbnails-box {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .header img {
@@ -56,33 +48,26 @@ ul {
     font-size: 30px;
 }
 
-
-.tech {
-    margin-top: 20px;
-}
-
-.tech .item {
-    justify-content: center;
-}
-
-.bg-item {
-    background-color: #21252c;
-    height: 50px;
-}
-
-.tech-items {
-    color: white;
-    border-right: 3px solid #242931;
-    padding-top: 15px;
-    padding-right: 25px;
-}
-
-.tech-items:last-child {
-    border-right: none;
+.space {
+    border-bottom: 2px solid #1c2027;
+    margin-left: 16%;
+    width: 70%;
 }
 
 .description-text {
-    color: #999999;
+    color: #444444;
     font-size: 16px;
-    padding: 15px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+}
+
+.description-text p {
+    margin-bottom: 0;
+}
+
+.github-repo {
+    margin-bottom: 10px;
+}
+
+.github-repo a, .heroku a{
+    color: #999999;
 }

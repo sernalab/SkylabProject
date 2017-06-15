@@ -98,7 +98,11 @@ form {
 *===============
 */
 
-.button {
+button{
     border: none;
+    color: #f06485;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin-left: 35%;
 }
 

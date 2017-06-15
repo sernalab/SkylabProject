@@ -4,17 +4,19 @@
       <li class="span">
         <div class="thumbnail">
           <div class="header">
-              <a :href="`#/profile/${user._id}`"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAr8AAAAJGJlYzQyM2E1LTIzOTgtNDE1My1hNjE2LTBiNTIyYjVmODUzZQ.jpg" alt=""></a>
+              <a :href="`#/profile/${user._id}`"><img :src="user.img" alt=""></a>
               <h1 class="students-header"><a :href="`#/profile/${user._id}`">{{ user.user.name }}</a></h1>
-              <div class="tech">
-                  <ul class="item bg-item">
-                      <li class="tech-items">Node</li>
-                      <li class="tech-items">CSS3</li>
-                      <li class="tech-items">Vue</li>
-                  </ul>
+              
+              <div class="space"></div>
+              
+              <div class="description-text">
+                  <p>{{ user.project_name }}</p>
               </div>
-              <div class="description">
-                  <p class="description-text"> {{ user.user.description }}</p>
+              <div class="github-repo">
+                  <a :href="user.github_repo" target="_blank"> Github Repository</a>
+              </div>
+              <div class="heroku">
+                  <a :href="user.heroku_url" target="_blank"> Heroku </a>
               </div>
           </div>
         </div>
