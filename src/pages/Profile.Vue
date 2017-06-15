@@ -11,7 +11,7 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
                                     <div class="box-masonry header-profile">
-                                        <!-- <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAr8AAAAJGJlYzQyM2E1LTIzOTgtNDE1My1hNjE2LTBiNTIyYjVmODUzZQ.jpg" alt=""> -->
+                                        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAr8AAAAJGJlYzQyM2E1LTIzOTgtNDE1My1hNjE2LTBiNTIyYjVmODUzZQ.jpg" alt="">
                                         <div class="box-masonry-text">
                                             <h4><a href="#">x</a></h4>
                                             <div class="working">
@@ -25,7 +25,7 @@
                                             <div class="linkedin">
                                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                                                 <div class="linkedin-link">
-                                                    <!-- <p>https://www.linkedin.com/in/jaume-regas-486aa5129/</p> -->
+                                                    <p>https://www.linkedin.com/in/jaume-regas-486aa5129/</p>
                                                 </div>
                                             </div>
                                         </div>
