@@ -5,9 +5,9 @@ const cors = require('cors')
 
 const app = express()
 
-const routesProjects = require('./routes/projects')
+const routesUsers = require('./routes/users')
 
-app.use(cors())
+app.use( cors() )
 
 /* static folder */
 app.use(express.static(path.join(__dirname, '../dist')))
@@ -22,6 +22,6 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/api/projects', routesProjects)
+app.use('/api/users', routesUsers)
 
 module.exports = app

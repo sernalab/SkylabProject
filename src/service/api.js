@@ -5,7 +5,7 @@ const username = "sernalab"
 
 export default {
   addUser(user) {
-    return axios.post(`${host}/projects/add`, user)
+    return axios.post(`${host}/users/addUser`, user)
       .then(function (response) {
       	console.log(response)
         return response;
@@ -15,7 +15,7 @@ export default {
       });
   },
   getUsers() {
-    return axios.get(`${host}/projects/`)
+    return axios.get(`${host}/users/`)
       .then(function (response) {
       	console.log(response)
         return response;
@@ -25,7 +25,7 @@ export default {
       });
   },
   getUser(userId) {
-    return axios.get(`${host}/project/${userId}`)
+    return axios.get(`${host}/users/getUser/${userId}`)
       .then(function (response) {
       	console.log(response)
         return response;
@@ -40,6 +40,6 @@ export default {
 
 axios.get('https://api.github.com/users/' + username)
   .then(function(response){
-    console.log(response.data);
+    console.log(response.data); 
     console.log(response.status);
-  });
+  }); 
