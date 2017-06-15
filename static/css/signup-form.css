@@ -56,6 +56,10 @@ fieldset {
     border: 0;
 }
 
+form {
+    left: 25%;
+}
+
 .panel {
     margin-bottom: 20px;
     background-color: #fff;
@@ -76,10 +80,6 @@ fieldset {
     border-top-right-radius: 3px;
 }
 
-form {
-    left: 25%;
-}
-
 .panel-body {
     padding: 15px;
     width: 50%;
@@ -90,3 +90,15 @@ form {
 .field-checklist .wrapper {
     width: 100%;
 }
+
+
+/*
+*===============
+* BUTTON
+*===============
+*/
+
+.button {
+    border: none;
+}
+

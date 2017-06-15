@@ -10,7 +10,7 @@
 				:model="model" 
 				:options="formOptions">
 			</vue-form-generator>
-			<button type="submit">Send</button>
+			<button type="submit" class="see-all">Send</button>
 		</div>
 	</form>
 </div>
@@ -52,26 +52,6 @@ export default{
 							required: true
 						},{
 							type: "input",
-							inputType: "password",
-							label: "Password",
-							model: "password",
-							min: 6,
-							required: true,
-							hint: "Minimum 6 characters",
-							validator: VueFormGenerator.validators.string
-						},{
-							type: "select",
-							label: "Promotion",
-							model: "promotion",      
-							values: ["2016-04", "2016-07", "2016-09", "----" , "2017-01", "2017-04", "2017-07"],
-						},{
-							type: "input",
-							inputType: "email",
-							label: "E-mail",
-							model: "email",
-							placeholder: "User's e-mail address"
-						},{
-							type: "input",
 							inputType: "text",
 							label: "Github",
 							model: "github",
@@ -97,12 +77,6 @@ export default{
 							label: "Description Project",
 							model: "description_project",
 							placeholder: "Insert a description"
-						},
-						{
-							type: "checkbox",
-							label: "Working",
-							model: "working",
-							default: true
 						}]
 					},
 					formOptions: {
