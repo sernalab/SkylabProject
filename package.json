@@ -5,8 +5,8 @@
   "author": "JuanMa Garrido <JuanMa.Garrido@gmail.com>",
   "private": true,
   "scripts": {
-    "start": "node server/app",
-    "dev": "nodemon server/app",
+    "start": "node index",
+    "dev": "nodemon index",
     "dev:vue": "node build/dev-server.js",
     "start:vue": "node build/dev-server.js",
     "build:vue": "node build/build.js",
@@ -16,6 +16,7 @@
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "cors": "^2.8.3",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "jquery": "^3.2.1",

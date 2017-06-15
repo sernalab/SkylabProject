@@ -1,0 +1,122 @@
+[
+	{
+		"project_name": "TØKKES",
+		"github_repo": "https://github.com/joseangelbarrera/tokkes_web",
+		"heroku_url": "https://tokkes.herokuapp.com/",
+		"user": {
+			"name": "Jose Angel"
+		}
+	},
+	{
+		"project_name": "SportMe",
+		"github_repo": "https://github.com/picapoll/sportme",
+		"heroku_url": "https://salty-falls-47049.herokuapp.com/",
+		"user": {
+			"name": "Bernat"
+		}
+	},
+	{
+		"project_name": "EnCulturapp",
+		"github_repo": "https://github.com/nuriaescude/enculturapp",
+		"heroku_url": "https://enculturapp.herokuapp.com/",
+		"user": {
+			"name": "Nuria"
+		}
+	},
+	{
+		"project_name": "PadelGO",
+		"github_repo": "https://github.com/jaumereg/padel-go",
+		"heroku_url": "https://shrouded-garden-46251.herokuapp.com/",
+		"user": {
+			"name": "Jaume"
+		}
+	},
+	{
+		"project_name": "TasksAgend",
+		"github_repo": "https://github.com/tsatsan/TasksAgend",
+		"heroku_url": "https://mysterious-dawn-47809.herokuapp.com/",
+		"user": {
+			"name": "Jordi"
+		}
+	},
+	{
+		"project_name": "Cucumber Basket",
+		"github_repo": "https://github.com/lfernandezcall/cucumber_basket",
+		"heroku_url": "https://cucumber-basket.herokuapp.com",
+		"user": {
+			"name": "Luis Alberto"
+		}
+	},
+	{
+		"project_name": "Fundacion La Casita",
+		"github_repo": "https://github.com/Riay/Fundacion-La-Casita",
+		"heroku_url": "https://fundacion-la-casita.herokuapp.com",
+		"user": {
+			"name": "Yair"
+		}
+	},
+	{
+		"project_name": "Beat It!",
+		"github_repo": "https://github.com/gusblacknails/Jamming-with-JS",
+		"heroku_url": "https://still-shelf-65040.herokuapp.com/",
+		"user": {
+			"name": "Gus"
+		}
+	},
+	{
+		"project_name": "Skylab Projects",
+		"github_repo": "https://github.com/sernalab/SkylabProject",
+		"heroku_url": "https://intense-mesa-94824.herokuapp.com/",
+		"user": {
+			"name": "Carles"
+		}
+	},
+	{
+		"project_name": "Sky Manager",
+		"github_repo": "https://github.com/MarioTerron/skymanager",
+		"heroku_url": "https://marioterron-skymanager.herokuapp.com",
+		"user": {
+			"name": "Mario"
+		}
+	},
+	{
+		"project_name": "Gymapp",
+		"github_repo": "https://github.com/tonimg/GoToGym",
+		"heroku_url": "https://gotogymapp.herokuapp.com/",
+		"user": {
+			"name": "Toni"
+		}
+	},
+	{
+		"project_name": "Zero Waste",
+		"github_repo": "https://github.com/LeonelAV/foodwasteproject_name",
+		"heroku_url": "https://frozen-shelf-37023.herokuapp.com/",
+		"user": {
+			"name": "Leo"
+		}
+	},
+	{
+		"project_name": "Calm and Care",
+		"github_repo": "https://github.com/misan7/caregivers-app",
+		"heroku_url": "https://keepcalmandcare.herokuapp.com/",
+		"user": {
+			"name": "Sergio"
+		}
+	},
+	{
+		"project_name": "Wax Deal",
+		"github_repo": "https://github.com/studiosally/waxdeal",
+		"heroku_url": "https://calm-reef-67389.herokuapp.com/index.html",
+		"user": {
+			"name": "Wally"
+		}
+	},
+	{
+		"project_name": "Vizago",
+		"github_repo": "https://github.com/sgarmendia/vizago",
+		"heroku_url": "https://vizago.herokuapp.com/",
+		"user": {
+			"name": "Simon"
+		}
+	}
+]
