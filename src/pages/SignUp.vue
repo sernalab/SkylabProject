@@ -33,7 +33,7 @@ export default{
 					model: {
 						name: "",
 						project_name: "",
-						github: "",
+						github_repo: "",
 						heroku: "",
 					},
 					schema: {
