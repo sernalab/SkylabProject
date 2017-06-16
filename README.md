@@ -1,5 +1,4 @@
-[![Skylab](https://github.com/FransLopez/logo-images/blob/master/logos/skylab-56.png)](http://www.skylabcoders.com/)  
-
+<p align="center"><a href="http://www.skylabcoders.com/" target="_blank"><img width="100"src="https://github.com/FransLopez/logo-images/blob/master/logos/skylab-56.png)"></a></p>
 <p align="center"><a href="https://vuejs.org" target="_blank"><img width="100"src="https://vuejs.org/images/logo.png"></a></p>
 
 [![NodeJS](https://github.com/FransLopez/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
