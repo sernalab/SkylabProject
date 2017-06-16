@@ -2,14 +2,18 @@
 <p align="center"><a href="https://vuejs.org" target="_blank"><img width="100"src="https://vuejs.org/images/logo.png"></a></p>
 
 <p><a href="https://nodejs.org/" target="_blank"><img width="100"src="https://github.com/FransLopez/logo-images/blob/master/logos/nodejs.png"></a></p>
-<p><a href="https://www.mongodb.com" target="_blank"><img width="100"src="https://github.com/FransLopez/logo-images/blob/master/logos/mongodb.png"></a></p>
+<p><a href="https://www.mongodb.com" target="_blank"><img width="120"src="https://github.com/FransLopez/logo-images/blob/master/logos/mongodb.png"></a></p>
 
-[![NodeJS](https://github.com/FransLopez/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
-[![MongoDB](https://github.com/FransLopez/logo-images/blob/master/logos/mongodb.png)](https://www.mongodb.com/)
 
-[![Bootstrap](https://github.com/FransLopez/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)
+<p align="center">
+  <a href="http://getbootstrap.com/"><img src="https://github.com/FransLopez/logo-images/blob/master/logos/bootstrap.png" alt="Build Status"></a>
+  <a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="Coverage Status"></a>
+<a href="https://nodejs.org/" target="_blank"><img width="100"src="https://github.com/FransLopez/logo-images/blob/master/logos/nodejs.png"></a><
+  <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/v/vue.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/l/vue.svg" alt="License"></a>
+  <a href="https://www.mongodb.com" target="_blank"><img width="120"src="https://github.com/FransLopez/logo-images/blob/master/logos/mongodb.png"></a>
+</p>
 
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 # Skylab Projects
 
