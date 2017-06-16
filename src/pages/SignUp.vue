@@ -33,7 +33,7 @@ export default{
 					model: {
 						name: "",
 						project_name: "",
-						github_repo: "",
+						github: "",
 						heroku: "",
 					},
 					schema: {
@@ -56,7 +56,7 @@ export default{
 							type: "input",
 							inputType: "text",
 							label: "Github",
-							model: "github_repo",
+							model: "github",
 							placeholder: "Insert your github repository"
 						},{
 							type: "input",
