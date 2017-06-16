@@ -9,8 +9,8 @@
             <p>A RECRUITMENT SITE OF DEVELOPERS</p>
             <div class="main-buttons">
                 <!-- <i class="fa-arrow-right"></i><router-link to="/projects">Projects</router-link> -->
-                <i class="fa-arrow-right"></i><router-link to="/applicants">Applicants</router-link>
-                <i class="fa-arrow-right"></i><router-link to="/SignUp">Alumni sign Up</router-link>
+                <router-link to="/applicants"><i class="fa fa-arrow-right"></i>Applicants</router-link>
+                <router-link to="/SignUp"><i class="fa fa-arrow-right"></i>Alumni sign Up</router-link>
             </div>
         </div>
     </div>
