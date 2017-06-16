@@ -3,9 +3,7 @@
         <div id="all">
             <div class="container-fluid">
                 <div class="row row-offcanvas row-offcanvas-left">
-
                     <asideMenu></asideMenu>
-
                     <div class="col-xs-12 col-sm-8 col-md-9 content-column">
                         <div class="grid">
                             <div class="row">
@@ -13,7 +11,7 @@
                                     <div class="box-masonry header-profile">
                                         <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAr8AAAAJGJlYzQyM2E1LTIzOTgtNDE1My1hNjE2LTBiNTIyYjVmODUzZQ.jpg" alt="">
                                         <div class="box-masonry-text">
-                                            <h4><a href="#">x</a></h4>
+                                            <h4><router-link to="#">x</router-link></h4>
                                             <div class="working">
                                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                 <p>Google Inc.</p>
@@ -108,10 +106,10 @@ export default {
         asideMenu
     },
     mounted() {
-        api.getUsers()
-            .then(response => {
-              this.users = response.data
-            })
+    api.getUsers()
+        .then(response => {
+          this.users = response.data
+        })
     },
     props: [
     'user'

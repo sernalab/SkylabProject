@@ -79,7 +79,7 @@ export default{
 			submit() {
 				api.addUser(this.model)
 				this.addProject(this.model)
-				this.$router.push('/applicants')
+				this.$router.push('./applicants')
 			}
 		}  
 };
