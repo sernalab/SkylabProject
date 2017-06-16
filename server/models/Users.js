@@ -38,7 +38,7 @@ const UserSchema = new mongoose.Schema({
             email: {
                 type: String
             },
-            github: {
+            github_repo: {
                 type: String
             },
             description: {
