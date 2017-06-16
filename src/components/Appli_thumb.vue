@@ -13,10 +13,10 @@
                   <p>{{ user.project_name }}</p>
               </div>
               <div class="github-repo">
-                  <a :href="user.github_repo" target="_blank"> Github Repository</a>
+                  <i class="fa fa-github-alt" aria-hidden="true"></i><a :href="user.github_repo" target="_blank"> Github Repository</a>
               </div>
               <div class="heroku">
-                  <a :href="user.heroku_url" target="_blank"> Heroku </a>
+                  <i class="fa fa-globe" aria-hidden="true"></i><a :href="user.heroku_url" target="_blank"> Heroku </a>
               </div>
           </div>
         </div>

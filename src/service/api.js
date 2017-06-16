@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const host = 'http://localhost:3000/api'
+const host = '/api'
 const username = "sernalab"
 
 export default {

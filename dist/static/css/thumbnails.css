@@ -69,6 +69,14 @@ ul {
     margin-bottom: 10px;
 }
 
-.github-repo a, .heroku a{
+.github-repo a,
+.heroku a {
     color: #999999;
 }
+
+.github-repo i,
+.heroku i {
+    color: #999999;
+}
+
+

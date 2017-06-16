@@ -1,7 +1,8 @@
 .box-masonry {
     background-color: #f4f4f4;
 }
-.box-masonry img{
+
+.box-masonry img {
     margin-left: 25%;
 }
 
@@ -27,10 +28,11 @@
 }
 
 .linkedin-link {
-	display: inline-block;
+    display: inline-block;
 }
 
-.description, .linkedin p {
+.description,
+.linkedin p {
     display: inline-block;
 }
 
