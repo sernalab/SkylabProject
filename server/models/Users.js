@@ -7,25 +7,7 @@ const UserSchema = new mongoose.Schema({
         heroku_url: String,
         description: String,
         img: String,
-        promotion: {
-            type: String
-        },
-        email: {
-            type: String
-        },
-        github_user: {
-            type: String
-        },
-        description_work: {
-            type: String
-        },
         project_name: {
-            type: String
-        },
-        project_made: {
-            type: String
-        },
-        description_project: {
             type: String
         },
         user: {
