@@ -56,7 +56,7 @@ export default{
 							type: "input",
 							inputType: "text",
 							label: "Github",
-							model: "github",
+							model: "github_repo",
 							placeholder: "Insert your github repository"
 						},{
 							type: "input",
