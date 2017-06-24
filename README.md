@@ -40,4 +40,5 @@ This repository contains a Full Stack project made with HTML/CSS/Vue.js/Node/Mon
 Skylab Projects! is an easy way to expose finals projects from our studients.
 
 
-![alt tag](https://media.giphy.com/media/xUA7aS2fsY1cZnAiHu/giphy.gif)
+<!-- ![alt tag](https://media.giphy.com/media/xUA7aS2fsY1cZnAiHu/giphy.gif)
+ -->
